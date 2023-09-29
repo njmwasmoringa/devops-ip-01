@@ -1,3 +1,12 @@
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  align-self: flex-end;
+}
+
 .turquoise{
     background-color: #26a69a;
 }
