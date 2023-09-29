@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+    tools [devops-ip01-nodejs]
+    stages{
+        stage('build'){
+            steps{
+                sh 'npm install'
+            }
+        }
+
+        stage('test'){
+            steps{
+                sh 'echo "No tests for this app"'
+            }
+        }
+
+        stage('deploy'){
+            steps{
+                sh 'git push git@github.com:njmwasmoringa/devops-ip-01.git master'
+            }
+        }
+    }
+}
