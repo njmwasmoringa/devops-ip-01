@@ -2,7 +2,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  background-color: #ffffff;
+  background-color: #a58a8a;
 }
 
 footer{
